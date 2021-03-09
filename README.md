@@ -1,1 +1,1 @@
-Playing with Firebase login authentication, part I
+Playing around with Firebase login authentication, part I
