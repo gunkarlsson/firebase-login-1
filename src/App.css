@@ -1,38 +1,120 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Marko+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Marko One";
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+button {
+  border: none;
+  outline: none;
+  width: 100%;
+  padding: 12px 0;
+  margin-top: 10px;
+  color: rgb(0, 27, 235);
+  font-size: 1.2rem;
+  background: #ffeb0c;
+  cursor: pointer;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+.login {
+  width: 100%;
   min-height: 100vh;
+  padding: 0 20px;
+  background: #ffcbbb;
+  display: flex;
+}
+
+.login .loginContainer {
+  padding: 60px;
+  margin: auto;
+  width: 100%;
+  max-width: 520px;
+  min-height: 600px;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  background-color: rgb(0, 60, 255);
+  box-shadow: 12px 12px 25px rgba(0, 0, 0, 0.2);
+}
+
+.login .loginContainer label {
+  color: white;
+  margin: 20px 0 5px 0;
+  display: block;
+  font-size: 1.2rem;
+}
+
+.login .loginContainer input {
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 19px;
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.3);
+  color: #fff;
+}
+
+.login .loginContainer .btnContainer {
+  width: 100%;
+  padding: 24px 0;
+}
+
+.login .loginContainer .btnContainer p {
+  margin: 14px 0 0 0;
+  text-align: right;
+  color: #fff;
+}
+
+.login .loginContainer .btnContainer p span {
+  text-decoration: underline;
+  font-weight: 500;
+  margin-left: 5px;
+  cursor: pointer;
+  transition: all 200ms ease-in-out;
+}
+
+.login .loginContainer .btnContainer p span:hover {
+  color: #fff825;
+}
+
+.login .loginContainer .errorMsg {
+  color: #ffd900;
+}
+
+.hero {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #ffcbbb;
+}
+
+.hero h3 {
+  color: rgb(0, 27, 235);
+  text-align: center;
+  margin-top: 120px;
+}
+
+.hero nav {
+  background: rgb(0, 27, 235);
+  width: 100%;
+  padding: 20px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.hero nav button {
+  width: 120px;
+  padding: 6px;
+  background-color: white;
+  transition: all 200ms ease-in-out;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.hero nav button:hover {
+  background: #fff267;
 }
